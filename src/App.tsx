@@ -4,6 +4,7 @@ import {useApiData} from "./services/rickandmorty-api";
 import {Footer} from "./components/ui/footer";
 import {Footertwo} from "./components/ui/footertwo";
 import {Comment} from "./components/Comment";
+import {Header} from "./components/ui/header";
 
 function App() {
     const {characters} = useApiData();
@@ -11,7 +12,8 @@ function App() {
     return (
         <div className="flex flex-col min-h-screen bg-black">
             <Title />
-            <div className="container grid items-center justify-center w-full grid-cols-1 gap-10 py-4 pt-12 bg-black md:grid-cols-6">
+            <Header />
+            <div className="container grid items-center justify-center w-full grid-cols-1 gap-10 pt-14 md:grid-cols-6">
                 {characters.map((character) => (
                     <Cards
                         key={character.id}
