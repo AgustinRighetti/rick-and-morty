@@ -15,7 +15,7 @@ export function Cards({name, image, species}: Props) {
         >
             {isOpen ? (
                 <div className="relative">
-                    <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-black bg-gray-100">
+                    <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-white from-primary-200 from-primary-800 bg-gradient-to-r ">
                         <h2 className="text-2xl">{name}</h2>
 
                         <span>{species}</span>
