@@ -17,7 +17,9 @@ function App() {
                 {characters.map((character) => (
                     <Cards
                         key={character.id}
+                        gender={character.gender}
                         image={character.image}
+                        location={character.location}
                         name={character.name}
                         species={character.species}
                     />

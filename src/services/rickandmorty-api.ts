@@ -5,6 +5,8 @@ interface Character {
     name: string;
     image: string;
     species: string;
+    location: string;
+    gender: string;
 }
 
 export function useApiData() {
@@ -16,6 +18,7 @@ export function useApiData() {
             .then((agu) => setCharacters(agu.results));
     };
 
+    console.log(characters);
     useEffect(() => {
         getData();
     }, []);
